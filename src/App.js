@@ -49,7 +49,6 @@ async function getOpenAIResponse() {
     return data.json();
   }).then((data) => {
     setIsButtonLoading(false);
-    console.log(data.choices[0].text);
     setResultText(data.choices[0].text.trim());
   });
   } catch(error) {

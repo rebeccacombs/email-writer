@@ -80,7 +80,7 @@ async function getOpenAIResponse() {
        
         <FormControl>
         <FormLabel fontSize="2xl" mt={4}>Output</FormLabel>
-            <Textarea fontSize="xl" readOnly type='text' value={resultText} rows={10} placeholder="Output text displays here.">
+            <Textarea fontSize="xl" readOnly type='text' value={resultText} rows={11} placeholder="Output text displays here.">
            </Textarea>
         </FormControl>
     </Box>

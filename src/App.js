@@ -35,14 +35,14 @@ async function getOpenAIResponse() {
     "max_tokens": 256,
   }
 
-  const API_KEY = "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"; 
+  const api_key = process.env.REACT_APP_MY_PERSONAL_API_KEY;
   
   try{
     await fetch("https://api.openai.com/v1/completions", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "Authorization": "Bearer " + API_KEY
+      "Authorization": "Bearer " + api_key
     },
     body: JSON.stringify(APIBody)
   }, setIsButtonLoading(true) ).then((data) => {

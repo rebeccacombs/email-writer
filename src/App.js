@@ -63,7 +63,7 @@ async function getOpenAIResponse() {
       <Text fontSize="4xl" fontWeight='bold' mb={4} align="center">
       Email Generator
             </Text>
-            <Text pb={2} fontSize="xl" textAlign='center'>This is tool used for generating emails. Enter some text on what you want the email to be about. Specify who it is going to as well.</Text>
+            <Text pb={2} fontSize="xl" textAlign='center'>This tool is used for generating emails. Enter some text on what you want the email to be about. Specify who it is going to as well.</Text>
             
             {error && (
                 <Text color="red.300" my={2} fontSize="xl">{error}</Text>

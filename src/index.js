@@ -7,6 +7,7 @@ import 'semantic-ui-css/semantic.min.css'
 import { ChakraProvider, ColorModeScript } from '@chakra-ui/react'
 import theme from './theme'
 import Footer from "./Footer"
+import "./i18n";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

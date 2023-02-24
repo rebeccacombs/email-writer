@@ -14,7 +14,8 @@ const resources = {
           "gButton": "Generate Email",
           "output": "Output",
           "output-placeholder": "Output text displays here.",
-          "footer": "Team LBR. All Rights Reserved"
+          "footer": "Team LBR. All Rights Reserved",
+          "error": "Please enter more text, or make sure you are writing in the right language."
         }
       },
       ch: {
@@ -28,7 +29,8 @@ const resources = {
             "gButton": "生成电子邮件",
             "output": "输出",
             "output-placeholder": "输出文本在此处显示。",
-            "footer": "LBR团队。 版权所有"
+            "footer": "LBR团队。 版权所有",
+            "error": "请输入更多文字。"
         }
       }
 }; 

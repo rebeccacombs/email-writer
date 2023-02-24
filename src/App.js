@@ -60,7 +60,7 @@ async function getOpenAIResponse() {
     "max_tokens": 256,
   }
 
-  const api_key = process.env.REACT_APP_MY_PERSONAL_API_KEY;
+  const api_key = "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"
   
   try{
     await fetch("https://api.openai.com/v1/completions", {
@@ -87,6 +87,8 @@ async function getOpenAIResponse() {
           .then((response) => {
             setResultText(response.data.translatedText)
           })
+    }else{
+      setResultText(langu)
     }
 
   });

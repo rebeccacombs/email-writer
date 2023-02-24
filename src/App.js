@@ -73,7 +73,6 @@ async function getOpenAIResponse() {
   }, setIsButtonLoading(true) ).then((data) => {
     return data.json();
   }).then((data) => {
-    setIsButtonLoading(false);
     let langu = data.choices[0].text.trim()
     
     if(detectLanguageKey === 'zh'){
@@ -90,7 +89,7 @@ async function getOpenAIResponse() {
     }else{
       setResultText(langu)
     }
-
+    setIsButtonLoading(false);
   });
   } catch(error) {
     setError(error)
